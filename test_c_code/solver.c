@@ -54,7 +54,7 @@ int main()
                     0.0, 0.0, 0.0, 1.0,
                     1.0, 0.0, 1.0, 0.0};
 
-    taucs_ccs_matrix *taucs_A = taucs_construct_sorted_ccs_matrix(A, 5, 4);
+    taucs_ccs_matrix *taucs_A = taucs_construct_sorted_ccs_matrix(A, 4, 5);
     taucs_print_ccs_matrix(taucs_A);
 
     double b[5] = {1.1, 2.2, 3.3, 4.4, 3.3};
