@@ -3,13 +3,13 @@
 #include<stdlib.h>
 #include<math.h>
 #include<time.h>
-#include <dmalloc.h>
+#include<malloc.h>
 
 double *random_matrix(int m, int n)
 /* Creates a random sparse-ish matrix for test purposes. In each column, we fill in
    about 1/10 of the entries with nonzero elements. */
 {
-    double *A = calloc(m*n,sizeof(double));
+    double *A = malloc(m*n,sizeof(double));
     int i,j;
     for(j=0;j<n;j++) {
         for(i=0;i<ceil((double)(m)/10.0);i++) {
