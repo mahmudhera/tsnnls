@@ -1,0 +1,5 @@
+f77blas tests
+DAXPY_F77 test...  passed.
+DSYMV_F77 test...  passed.
+DSYRK_F77 test...  passed.
+PASS f77blas_test (exit status: 0)

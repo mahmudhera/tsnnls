@@ -1,0 +1,13 @@
+taucs_basic/libtsnnls_la-amdtru.lo: taucs_basic/amdtru.c \
+ /usr/include/stdc-predef.h taucs_basic/f2c.h ../config.h acint32_type.h \
+ taucs_basic/taucs_common.h
+
+/usr/include/stdc-predef.h:
+
+taucs_basic/f2c.h:
+
+../config.h:
+
+acint32_type.h:
+
+taucs_basic/taucs_common.h:
