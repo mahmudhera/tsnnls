@@ -60,7 +60,7 @@ int main()
     double b[6] = {1.1, 2.2, 3.3, 4.4, 5.5, 6.6};
     taucs_double *taucs_b = b;
 
-    taucs_double *result = t_snnls(taucs_A, taucs_b, NULL, 0, 0);
+    taucs_double *result = t_snnls(taucs_A, taucs_b, NULL, 1, 0);
     for (i = 0; i < 5; i++) {
         printf("%.3lf ", result[i]);
     }
