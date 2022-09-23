@@ -1,9 +1,9 @@
-#include <stdio.h>
-#include <tsnnls.h>
+#include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
 #include<time.h>
 #include<malloc.h>
+#include<tsnnls.h>
 
 double *random_matrix(int m, int n)
 /* Creates a random sparse-ish matrix for test purposes. In each column, we fill in
@@ -12,7 +12,7 @@ double *random_matrix(int m, int n)
     double *A = malloc(m*n*sizeof(double));
     int i,j;
     for(j = 0; j < n; j++) {
-        for(i = 0; i < ceil((double)(m)/10.0); i++) {
+        for(i = 0; i < 5; i++) {
             A[(rand() % m) + m*j] = 2.0*((double)(rand())/(double)(RAND_MAX)) - 1.0;
         }
     }
