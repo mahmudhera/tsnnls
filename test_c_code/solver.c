@@ -48,7 +48,7 @@ int main()
 {
     //test_basic();
     int i;
-    double A[12] = {1, 1, 0
+    double A[12] = {1, 1, 0,
                     1, 1, 1,
                     0, 1, -1,
                     1, -1, 0};
