@@ -46,6 +46,15 @@ void test_basic() {
 
 int main()
 {
-    test_basic();
+    //test_basic();
+    double A[25] = {1.0, 0.0, 0.0, 0.0, 0.0,
+                    0.0, 1.0, 0.0, 0.0, 0.0,
+                    0.0, 0.0, 1.0, 0.0, 0.0,
+                    0.0, 0.0, 0.0, 1.0, 0.0,
+                    0.0, 0.0, 0.0, 0.0, 1.0};
+
+    taucs_ccs_matrix *taucs_A = taucs_construct_sorted_ccs_matrix(A, 5, 5);
+    taucs_print_ccs_matrix(taucs_A);
+
     return 0;
 }
