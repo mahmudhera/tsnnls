@@ -49,14 +49,14 @@ int main()
     //test_basic();
     int i;
     double A[12] = {1, 1, 0,
-                    1, 1, 1,
-                    0, 1, -1,
-                    1, -1, 0};
+                    0, 1, 0,
+                    0, 1, 0,
+                    1, 1, 0};
 
     taucs_ccs_matrix *taucs_A = taucs_construct_sorted_ccs_matrix(A, 3, 4);
     taucs_print_ccs_matrix(taucs_A);
 
-    double b[4] = {6, 9, 2, -4};
+    double b[4] = {1, 2, 3, 4};
     taucs_double *taucs_b = b;
 
     taucs_double *result = t_snnls(taucs_A, taucs_b, NULL, 0, 0);
